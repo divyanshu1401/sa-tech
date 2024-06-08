@@ -25,6 +25,14 @@ The questions can be found in questionnaire.rb
 
 Ensure we can run your exercise
 
+## Approach
+
+We will loop through the questions hash and take user input for each of the question.
+We will convert the user response to lower case to implement case insensitivity during comparision.
+We will compare the value entered by user with our array 'yes_variants'. If any of the value in the array matches the user respose, we will increment the yes_count variable(initially set to 0) by 1.
+After looping through all the questions we will call the do_report method. In the do report method, first we will calculate the rating of the current based on the yes_count variable using the given formula.
+Then we will update the pstore object, calculate the average and print it on the screen.
+
 ## Bonus Points
 
 Updated readme with an explanation of your approach
